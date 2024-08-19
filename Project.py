@@ -1,6 +1,8 @@
 import json
 import shutil
+
 import requests
+
 import Settings
 from Repo import Repo
 from Util import print_separator
