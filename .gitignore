@@ -1,3 +1,6 @@
 .repos/
+.venv/
+.idea/
 config.json
 RepoInfo.json
+__pycache__*
