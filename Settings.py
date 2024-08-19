@@ -21,5 +21,12 @@ SUPPORTED_FILE_EXTENSIONS = [
 	".css",
 	".javascript",
 	".cs",
-	".dart"
+	".dart",
+	".rs",
+	".cpp",
+	".hpp",
+	".h",
+	".m",
+	".swift",
+	".js"
 ]

@@ -40,6 +40,8 @@ class Repo:
 
 	def display_info(self):
 		print(f"{self.name}: Total Lines of Code: {self.total_lines:,}")
+		for info in self.info:
+			print(f"| {info.file_type} {info.display_percentage(self.total_lines)}% |")
 
 
 class LineCountInfo:
@@ -49,3 +51,9 @@ class LineCountInfo:
 
 	def add_lines(self, line_count: int):
 		self.line_count += line_count
+
+	def percentage(self, total_lines) -> float:
+		return self.line_count / total_lines
+
+	def display_percentage(self, total_lines):
+		return int(self.percentage(total_lines) * 100)
